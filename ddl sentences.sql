@@ -19,3 +19,8 @@ alter table familiar change column nombre nombre varchar(40) not null;
 alter table familiar change column apellido apellido varchar(40) not null;
 
 alter table familiar rename column fecha_nacimiento to fecha_de_nacimiento;
+
+alter table familiar drop column estatura;
+alter table familiar drop column fecha_de_nacimiento;
+alter table familiar drop column apellido;
+alter table familiar drop column nombre;
