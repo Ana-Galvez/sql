@@ -24,3 +24,6 @@ alter table familiar drop column estatura;
 alter table familiar drop column fecha_de_nacimiento;
 alter table familiar drop column apellido;
 alter table familiar drop column nombre;
+
+drop table if exists familiar;
+drop database if exists mis_familiares;
