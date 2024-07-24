@@ -6,3 +6,9 @@ create table if not exists mi_familiar(
     apellido varchar(20) not null,
     primary key(id_familiar)
 );
+
+show databases;
+show tables;
+
+alter table mi_familiar rename to familiar;
+
