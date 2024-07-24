@@ -12,3 +12,5 @@ show tables;
 
 alter table mi_familiar rename to familiar;
 
+alter table familiar add column estatura float not null;
+alter table familiar add column fecha_nacimiento date not null;
