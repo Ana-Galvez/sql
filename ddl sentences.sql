@@ -17,3 +17,5 @@ alter table familiar add column fecha_nacimiento date not null;
 
 alter table familiar change column nombre nombre varchar(40) not null;
 alter table familiar change column apellido apellido varchar(40) not null;
+
+alter table familiar rename column fecha_nacimiento to fecha_de_nacimiento;
