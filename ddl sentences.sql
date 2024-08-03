@@ -1,18 +1,18 @@
-CREATE database if NOT EXISTS mis_familiares;
+CREATE database IF NOT EXISTS mis_familiares;
 
 use mis_familiares;
 
 CREATE TABLE
-    if NOT EXISTS familiares (
-        id_familiar INT NOT NULL auto_increment PRIMARY KEY,
+    IF NOT EXISTS familiares (
+        id_familiar INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
         nombre VARCHAR(20) NOT NULL,
         apellido VARCHAR(20) NOT NULL,
-        -- primary key(id_familiar)
+        -- PRIMARY KEY (id_familiar)
     );
 
-show databases;
+SHOW DATABASES;
 
-show tables;
+SHOW TABLES;
 
 DESCRIBE familiares;
 
@@ -20,17 +20,18 @@ ALTER TABLE familiares
 RENAME TO mis_otros_familiares;
 
 ALTER TABLE mis_otros_familiares
-ADD COLUMN estatura FLOAT unsigned NOT NULL;
+ADD COLUMN estatura FLOAT UNSIGNED NOT NULL;
 
 ALTER TABLE mis_otros_familiares
 ADD COLUMN fecha_nacimiento DATE NOT NULL;
 
-ALTER TABLE mis_otros_familiares change COLUMN nombre nombre VARCHAR(40) NOT NULL;
+ALTER TABLE mis_otros_familiares CHANGE COLUMN nombre nombre VARCHAR(40) NOT NULL;
 
-ALTER TABLE mis_otros_familiares change COLUMN apellido apellido VARCHAR(40) NOT NULL;
+ALTER TABLE mis_otros_familiares CHANGE COLUMN apellido apellido VARCHAR(40) NOT NULL;
 
 ALTER TABLE mis_otros_familiares
 RENAME COLUMN fecha_nacimiento TO fecha_de_nacimiento;
+ALTER TABLE mi_familiar CHANGE COLUMN fecha_de_nacimiento fecha_de_nacimiento DATE NOT NULL DEFAULT "1900-01-01";
 
 ALTER TABLE mis_otros_familiares
 DROP COLUMN estatura;
@@ -44,6 +45,6 @@ DROP COLUMN apellido;
 ALTER TABLE mis_otros_familiares
 DROP COLUMN nombre;
 
-DROP TABLE if EXISTS mis_otros_familiares;
+DROP TABLE IF EXISTS mis_otros_familiares;
 
-DROP database if EXISTS mis_familiares;
+DROP database IF EXISTS mis_familiares;
