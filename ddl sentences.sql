@@ -1,3 +1,5 @@
+-- DATA DEFINITION LANGUAGE DDL
+
 CREATE database IF NOT EXISTS mis_familiares;
 
 use mis_familiares;
@@ -48,3 +50,13 @@ DROP COLUMN nombre;
 DROP TABLE IF EXISTS mis_otros_familiares;
 
 DROP database IF EXISTS mis_familiares;
+
+
+-- DATA MANIPULATION LANGUAGE DML
+
+INSERT INTO mis_otros_familiares ( nombre,apellido,estatura,fecha_de_nacimiento ) VALUES
+    ( "ana","galvez",1.52,"1982-02-13"),
+    ("diana","britez",1.60,"1976-05-07");
+
+INSERT INTO mis_otros_familiares SET nombre="ana", apellido="galvez", estatura=1.52, fecha_de_nacimiento="1982-02-13";
+
