@@ -65,4 +65,10 @@ SELECT nombre,apellido FROM mis_otros_familiares;
 SELECT COUNT(*) FROM mis_otros_familiares;
 SELECT COUNT(*) AS total_familiares FROM mis_otros_familiares;
 SELECT * FROM mis_otros_familiares WHERE nombre="ana";
-SELECT * FROM mis_otros_familiares WHERE nombre in ("ana","juan","jorge");
+SELECT * FROM mis_otros_familiares WHERE nombre IN ("ana","juan","jorge");
+SELECT * FROM mis_otros_familiares WHERE nombre LIKE 'a%'; que comience con a
+SELECT * FROM mis_otros_familiares WHERE nombre LIKE '%o'; que termine con o
+SELECT * FROM mis_otros_familiares WHERE apellido LIKE '%l%'; que contenga l
+SELECT * FROM mis_otros_familiares WHERE nombre NOT LIKE 'a%'; que no comience con a
+SELECT * FROM mis_otros_familiares WHERE nombre NOT LIKE '%o'; que no termine con o
+SELECT * FROM mis_otros_familiares WHERE apellido NOT LIKE '%l%'; que no contenga l
