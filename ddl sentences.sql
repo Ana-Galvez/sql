@@ -1,10 +1,10 @@
 create database if not exists mis_familiares;
 use mis_familiares;
 create table if not exists familiares(
-	id_familiar int not null auto_increment,
+	id_familiar int not null auto_increment PRIMARY KEY,
     nombre varchar(20) not null,
     apellido varchar(20) not null,
-    primary key(id_familiar)
+    -- primary key(id_familiar)
 );
 
 show databases;
