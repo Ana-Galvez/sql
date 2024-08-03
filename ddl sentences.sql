@@ -1,30 +1,49 @@
-create database if not exists mis_familiares;
+CREATE database if NOT EXISTS mis_familiares;
+
 use mis_familiares;
-create table if not exists familiares(
-	id_familiar int not null auto_increment PRIMARY KEY,
-    nombre varchar(20) not null,
-    apellido varchar(20) not null,
-    -- primary key(id_familiar)
-);
+
+CREATE TABLE
+    if NOT EXISTS familiares (
+        id_familiar INT NOT NULL auto_increment PRIMARY KEY,
+        nombre VARCHAR(20) NOT NULL,
+        apellido VARCHAR(20) NOT NULL,
+        -- primary key(id_familiar)
+    );
 
 show databases;
+
 show tables;
-describe familiares;
 
-alter table familiares rename to mis_otros_familiares;
+DESCRIBE familiares;
 
-alter table mis_otros_familiares add column estatura float unsigned not null;
-alter table mis_otros_familiares add column fecha_nacimiento date not null;
+ALTER TABLE familiares
+RENAME TO mis_otros_familiares;
 
-alter table mis_otros_familiares change column nombre nombre varchar(40) not null;
-alter table mis_otros_familiares change column apellido apellido varchar(40) not null;
+ALTER TABLE mis_otros_familiares
+ADD COLUMN estatura FLOAT unsigned NOT NULL;
 
-alter table mis_otros_familiares rename column fecha_nacimiento to fecha_de_nacimiento;
+ALTER TABLE mis_otros_familiares
+ADD COLUMN fecha_nacimiento DATE NOT NULL;
 
-alter table mis_otros_familiares drop column estatura;
-alter table mis_otros_familiares drop column fecha_de_nacimiento;
-alter table mis_otros_familiares drop column apellido;
-alter table mis_otros_familiares drop column nombre;
+ALTER TABLE mis_otros_familiares change COLUMN nombre nombre VARCHAR(40) NOT NULL;
 
-drop table if exists mis_otros_familiares;
-drop database if exists mis_familiares;
+ALTER TABLE mis_otros_familiares change COLUMN apellido apellido VARCHAR(40) NOT NULL;
+
+ALTER TABLE mis_otros_familiares
+RENAME COLUMN fecha_nacimiento TO fecha_de_nacimiento;
+
+ALTER TABLE mis_otros_familiares
+DROP COLUMN estatura;
+
+ALTER TABLE mis_otros_familiares
+DROP COLUMN fecha_de_nacimiento;
+
+ALTER TABLE mis_otros_familiares
+DROP COLUMN apellido;
+
+ALTER TABLE mis_otros_familiares
+DROP COLUMN nombre;
+
+DROP TABLE if EXISTS mis_otros_familiares;
+
+DROP database if EXISTS mis_familiares;
