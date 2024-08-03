@@ -60,3 +60,9 @@ INSERT INTO mis_otros_familiares ( nombre,apellido,estatura,fecha_de_nacimiento 
 
 INSERT INTO mis_otros_familiares SET nombre="ana", apellido="galvez", estatura=1.52, fecha_de_nacimiento="1982-02-13";
 
+SELECT * FROM mis_otros_familiares;
+SELECT nombre,apellido FROM mis_otros_familiares;
+SELECT COUNT(*) FROM mis_otros_familiares;
+SELECT COUNT(*) AS total_familiares FROM mis_otros_familiares;
+SELECT * FROM mis_otros_familiares WHERE nombre="ana";
+SELECT * FROM mis_otros_familiares WHERE nombre in ("ana","juan","jorge");
