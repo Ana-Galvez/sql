@@ -80,3 +80,5 @@ operadores lógicos
 SELECT * FROM tabla WHERE NOT columna="valor"
 SELECT * FROM mis_otros_familiares WHERE nombre LIKE 'a%' AND apellido LIKE "%z"; que nombre comience con a Y que apellido termine con z
 SELECT * FROM mis_otros_familiares WHERE nombre LIKE 'a%' OR apellido LIKE "%z"; que nombre comience con a y además los otros registros donde apellido termine con z
+
+UPDATE tabla SET columna1=valor, columna2=valor WHERE columna=valor;
