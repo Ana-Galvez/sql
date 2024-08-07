@@ -89,3 +89,4 @@ TRUNCATE TABLE tabla   sirve si hubo filas borradas donde hay un campo auto_incr
 
 operaciones matematicas  +  -  /  *
 funciones matematicas comunes   MOD   CEILING  FLOOR  ROUND  POWER SQRT
+funciones de agrupamiento  MIN  MAX  SUM   AVG
