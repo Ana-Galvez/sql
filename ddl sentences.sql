@@ -86,3 +86,6 @@ UPDATE tabla SET columna1=valor, columna2=valor WHERE columna=valor;
 DELETE FROM tabla WHERE columna=valor
 
 TRUNCATE TABLE tabla   sirve si hubo filas borradas donde hay un campo auto_increment y resetea a 1.
+
+operaciones matematicas  +  -  /  *
+funciones matematicas comunes   MOD   CEILING  FLOOR  ROUND  POWER SQRT
