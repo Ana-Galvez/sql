@@ -84,3 +84,5 @@ SELECT * FROM mis_otros_familiares WHERE nombre LIKE 'a%' OR apellido LIKE "%z";
 UPDATE tabla SET columna1=valor, columna2=valor WHERE columna=valor;
 
 DELETE FROM tabla WHERE columna=valor
+
+TRUNCATE TABLE tabla   sirve si hubo filas borradas donde hay un campo auto_increment y resetea a 1.
