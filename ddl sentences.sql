@@ -72,6 +72,7 @@ SELECT * FROM mis_otros_familiares WHERE apellido LIKE '%l%'; que contenga l
 SELECT * FROM mis_otros_familiares WHERE nombre NOT LIKE 'a%'; que no comience con a
 SELECT * FROM mis_otros_familiares WHERE nombre NOT LIKE '%o'; que no termine con o
 SELECT * FROM mis_otros_familiares WHERE apellido NOT LIKE '%l%'; que no contenga l
+SELECT * FROM mis_otros_familiares WHERE precio BETWEEN 5000 AND 15000;  entre 5000 y 15000 incluido
 
 operadores relacionales
 != o <> distinto    >   <   <= >=   = 
