@@ -92,3 +92,9 @@ funciones matematicas comunes   MOD   CEILING  FLOOR  ROUND  POWER SQRT
 funciones de agrupamiento  MIN  MAX  SUM   AVG
 
 select columna, count(*) as cantidad_columna from tabla GROUP BY columna;
+
+select columna, count(*) as cantidad_columna from tabla where columna u otra columna condicion "valor" GROUP BY columna 
+select columna, count(*) as cantidad_columna from tabla where columna u otra columna condicion "valor" GROUP BY columna having cantidad_columna condicion;
+
+WHERE: se usa antes del group by y order by y con columnas creadas en la tabla
+HAVING: se usa despues del group by y order by y con columnas creadas con as
