@@ -98,3 +98,10 @@ select columna, count(*) as cantidad_columna from tabla where columna u otra col
 
 WHERE: se usa antes del group by y order by y con columnas creadas en la tabla
 HAVING: se usa despues del group by y order by y con columnas creadas con as o columnas de la tabla
+
+select distinct columna from tabla    distinct  elimina datos duplicados
+
+select * from tabla where(si hay) order by columna asc(default) o DESC
+select * from tabla where(si hay) group by columna having(si hay) order by columna1,columna2 asc(default) o DESC
+
+order by: va a lo ultimo
