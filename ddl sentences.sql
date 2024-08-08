@@ -117,4 +117,5 @@ repeat(texto,cantidad de repeticiones)  replace(texto,lo nuevo,lo viejo)  revert
 Índices: son campos que hacen referencia a otro campo de una tabla para acceder más rápidamente cuando se hacen las consultas.
 1) primary keys
 2) UNIQUE
-3) creado por alguien 
+3) creado por alguien
+4) inice fulltext  tardan más las consultas
