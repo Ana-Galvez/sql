@@ -129,3 +129,6 @@ alter table tabla add constraint uq_nombre unique(columna)
 alter table tabla add index i_nombre(columna)
 alter table tabla add fulltext index fi_nombre(col1,col2,etc)
 
+alter table tabla drop index fi_nombre;
+alter table tabla drop index i_nombre
+alter table tabla drop constraint uq_nombre
