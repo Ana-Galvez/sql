@@ -106,3 +106,10 @@ select * from tabla where(si hay) order by columna asc(default) o DESC
 select * from tabla where(si hay) group by columna having(si hay) order by columna1,columna2 asc(default) o DESC
 
 order by: va a lo ultimo
+
+funciones de texto
+lower lcase  upper ucase  initcap   chr(n°) devuelva la letra del n° ascii  ascii(letra)
+substr(text,inicio,fin)  left(texto,cantidad caracteres)  right(texto,cantidad caracteres)  lenght(texto)
+trim  ltrim rtrim (texto)  saca los espacios antes o después
+concat(texto1,texto2,etc)  concat_ws(simbolo,texto1,texto2,etc)
+repeat(texto,cantidad de repeticiones)  replace(texto,lo nuevo,lo viejo)  revert(texto) 
