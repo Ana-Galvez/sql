@@ -112,4 +112,9 @@ lower lcase  upper ucase  initcap   chr(n°) devuelva la letra del n° ascii  as
 substr(text,inicio,fin)  left(texto,cantidad caracteres)  right(texto,cantidad caracteres)  lenght(texto)
 trim  ltrim rtrim (texto)  saca los espacios antes o después
 concat(texto1,texto2,etc)  concat_ws(simbolo,texto1,texto2,etc)
-repeat(texto,cantidad de repeticiones)  replace(texto,lo nuevo,lo viejo)  revert(texto) 
+repeat(texto,cantidad de repeticiones)  replace(texto,lo nuevo,lo viejo)  revert(texto)
+
+Índices: son campos que hacen referencia a otro campo de una tabla para acceder más rápidamente cuando se hacen las filtraciones.
+1) primary keys
+2) UNIQUE
+3) creado por alguien 
