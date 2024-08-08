@@ -123,3 +123,9 @@ repeat(texto,cantidad de repeticiones)  replace(texto,lo nuevo,lo viejo)  revert
 al crear la tabla
 INDEX i_nombre(columna)
 FULLTEXT INDEX fi_nombretabla(columna1,columna2,etc)
+
+alter table tabla add constraint pk_nombre_id primary key(columna)
+alter table tabla add constraint uq_nombre unique(columna)
+alter table tabla add index i_nombre(columna)
+alter table tabla add fulltext index fi_nombre(col1,col2,etc)
+
