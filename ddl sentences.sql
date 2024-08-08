@@ -119,3 +119,7 @@ repeat(texto,cantidad de repeticiones)  replace(texto,lo nuevo,lo viejo)  revert
 2) UNIQUE
 3) creado por alguien
 4) inice fulltext  tardan más las consultas
+
+al crear la tabla
+INDEX i_nombre(columna)
+FULLTEXT INDEX fi_nombretabla(columna1,columna2,etc)
